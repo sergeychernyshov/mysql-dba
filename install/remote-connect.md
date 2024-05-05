@@ -3,6 +3,7 @@
 Открываем порт 3306 на сервере MySQL
 ````
 firewall-cmd --zone=public --add-port=3306/tcp
+firewall-cmd --permanent --zone=public --add-port=3306/tcp
 ````
 
 В файле /etc/my.cnf указываем 

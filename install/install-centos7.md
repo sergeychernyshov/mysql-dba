@@ -33,9 +33,9 @@ root@localhost: hIdfxON*-9x3
 
 >mysql_secure_installation
 
-пароль для входа ```hIdfxON*-9x3```
+Пароль для входа ```hIdfxON*-9x3```
 
-скрипт задает следующие вопросы:
+Скрипт задает следующие вопросы:
  - смена пароля root@localhost --создал пароль Serka_1312
  - сменить пароль для root?
  - удалить анонимны пользователей?
@@ -61,6 +61,14 @@ mysql> select @@version;
 1 row in set (0.00 sec)
 ```
 
-Сделаем настроку для запуска БД MySQL после запуска OC.
+Сделаем настройку для запуска БД MySQL после запуска OC.
 
 >systemctl enable mysqld
+
+Для входа под учетной записью root без пароля в файл ````my.cnf```` нужно добавить 
+
+````
+[client]
+user=root
+password=Serka_1312
+````
