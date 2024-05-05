@@ -1,0 +1,2 @@
+#Просмотр сессий
+>show processlist
